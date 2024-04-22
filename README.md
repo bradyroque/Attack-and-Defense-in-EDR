@@ -2,7 +2,7 @@
 
 <h2> Project </h2>
 This lab focuses on emulating an authentic cyber intrusion and endpoint detection and response scenario. Drawing from Eric Capuano's online tutorial, I'll employ virtual machines to replicate both the threat and victim environments. The attacking machine will leverage 'Sliver' as a command-and-control (C2) framework to target a Windows endpoint machine, while the latter will run 'LimaCharlie' as its EDR solution.
-
+<br> </br>
 Eric Capuano's Guide: https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro?utm_campaign=post&utm_medium=web
 
 <h2> Setup </h2>
@@ -15,16 +15,31 @@ The initial phase of the lab involves configuring both systems. The attack machi
 ![264708076-d42cbd4d-7732-4f45-9e22-66457d2056ac](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/2d070354-367e-49ff-9aa7-11c4219d8347)
 ![264708101-ec31655e-ee37-48de-bcf0-ae04c8f5bb06](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/c728f1ce-5c1b-46b4-832c-b94e02cdb66f)
 
+<h4> Ubuntu Machine </h4>
+
+![264708323-1ed6cce1-4793-412b-8b8d-d0b65fbc6aa2](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/0b982c70-fd45-4c8c-af8b-8b7045c58cb8)
+
+<h4> The Offenses and the Defensive Strategies </h4>
+
+![264709166-10b13df6-8edd-4f79-bc04-e6fdca12cf68](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/7f099015-e7ae-4928-9c97-7c9ad0ddf6f2)
+![264709215-fd752f1f-324c-4d76-93f0-d1db0f6d5120](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/a1d7b138-8c49-4854-b011-e19f1dffdfb1)
+![264709305-4e4c15cd-4e6a-42ce-b554-73137e203a1c](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/57444514-8066-4720-9db9-e27fbc5d1ace)
 
 
+Initially, we'll craft our payload using Sliver and embed the malware into the Windows host machine. Subsequently, once the malware is executed on the endpoint, we can establish a command and control session.
+
+![264709842-1daf9c90-bab4-4a0c-ac98-5322a58dbc5e](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/f5aa088a-5093-4e7c-a629-bf2ddc7ab8d2)
+![264709970-0400c100-5a4b-4ab8-bc73-46f6e7e634a7](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/2066c00b-c628-4be5-97cd-2cf676245d34)
 
 
+With an active session established between the two machines, the attack machine can now commence reconnaissance activities, such as assessing privileges, gathering host information, and evaluating the host's security measures.
+
+![264710185-5e6c093c-91f8-4ad3-967c-ad51dcb2e9aa](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/f3333dc4-161d-4713-861d-10ba3be20359)
+![264710205-ae55f753-45d1-40c3-905a-3f2d0df716f5](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/5f83cb67-96df-48d3-a985-aac3f1480894)
+![264710318-4122902c-702b-4ff6-bebf-98d1d41256d2](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/e7f791fc-a0c3-4ee5-8fd0-d98b931ced67)
 
 
-
-
-
-
+Within the host machine, we can inspect our LimaCharlie SIEM to observe telemetry data from the attacker. This allows us to pinpoint the running payload and identify the connected IP address.
 
 
 
