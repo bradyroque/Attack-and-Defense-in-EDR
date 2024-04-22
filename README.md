@@ -16,3 +16,26 @@ The initial phase of the lab involves configuring both systems. The attack machi
 ![264707503-75977c64-7faa-4b38-a5ad-1824cec2e508](https://github.com/bradyroque/Attack-and-Defense-in-EDR/assets/166454401/a1407a89-a6dd-4155-8b4a-846510b75131)
 
 https://raw.githubusercontent.com/bradyroque/Attack-and-Defense-in-EDR/main/assets/166454401/a1407a89-a6dd-4155-8b4a-846510b75131.png
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
